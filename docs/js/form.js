@@ -6,7 +6,7 @@ function getBMICategory(bmi) {
   return "Obesity";
 }
 
-import { addRecord } from "../main.js";
+import { addRecord } from "./main.js";
 import { 
   interpretCortisol, 
   interpretCholesterol, 

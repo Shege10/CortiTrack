@@ -5,7 +5,7 @@ export function interpretCortisol(am, pm) {
   return `${morningStatus} / ${afternoonStatus}`;
 }
 
-// Cholesterol Interpretation33
+// Cholesterol Interpretation
 export function interpretCholesterol(chol) {
   if (chol < 200) return "Normal";
   if (chol <= 239) return "Borderline High";

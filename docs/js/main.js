@@ -1,5 +1,5 @@
-import { renderForm } from "./components/form.js";
-import { renderDashboard } from "./components/dashboard.js";
+import { renderForm } from "./form.js";
+import { renderDashboard } from "./dashboard.js";
 
 let records = [];
 
