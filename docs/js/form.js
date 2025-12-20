@@ -18,72 +18,60 @@ import {
 
 export function renderForm() {
   document.getElementById("form-container").innerHTML = `
-    <div class="bg-white p-6 rounded-lg shadow">
-      <h2 class="text-xl font-bold mb-4">Enter Patient Data</h2>
+    <div class="card">
+      <form id="patientForm">
 
-      <form id="patientForm" class="space-y-4">
-
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label>First Name</label>
-            <input required type="text" id="fname" class="w-full p-2 border rounded" />
-          </div>
-
-          <div>
-            <label>Last Name</label>
-            <input required type="text" id="lname" class="w-full p-2 border rounded" />
-          </div>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="fname" required />
         </div>
 
-        <div class="grid grid-cols-3 gap-4">
-          <div>
-            <label>Age</label>
-            <input type="number" id="age" class="w-full p-2 border rounded" min="1" max="120" />
-          </div>
-
-          <div>
-            <label>Weight (kg)</label>
-            <input type="number" id="weight" class="w-full p-2 border rounded" min="1" max="300" step="0.1" />
-          </div>
-
-          <div>
-            <label>Height (cm)</label>
-            <input type="number" id="height" class="w-full p-2 border rounded" min="30" max="250" step="0.1" />
-          </div>
+        <div class="form-group">
+          <label>Age</label>
+          <input type="number" id="age" min="1" max="120" />
         </div>
 
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label>Sleep (hrs)</label>
-            <input type="number" id="sleep" class="w-full p-2 border rounded" min="0" max="24" step="0.1" />
-          </div>
-
-          <div>
-            <label>Stress (1–10)</label>
-            <input type="number" id="stress" class="w-full p-2 border rounded" min="1" max="10" step="1" />
-          </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="lname" required />
         </div>
 
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label>Morning Cortisol</label>
-            <input type="number" required id="cort_m" class="w-full p-2 border rounded" min="0" step="0.01" />
-          </div>
-
-          <div>
-            <label>Afternoon Cortisol</label>
-            <input type="number" required id="cort_pm" class="w-full p-2 border rounded" min="0" step="0.01" />
-          </div>
+        <div class="form-group">
+          <label>Weight (kg)</label>
+          <input type="number" id="weight" min="1" step="0.1" />
         </div>
 
-        <div>
+        <div class="form-group">
+          <label>Height (cm)</label>
+          <input type="number" id="height" min="30" step="0.1" />
+        </div>
+
+        <div class="form-group">
+          <label>Sleep (hrs)</label>
+          <input type="number" id="sleep" min="0" step="0.1" />
+        </div>
+
+        <div class="form-group">
+          <label>Stress (1–10)</label>
+          <input type="number" id="stress" min="1" max="10" />
+        </div>
+
+        <div class="form-group">
+          <label>Morning Cortisol</label>
+          <input type="number" id="cort_m" min="0" step="0.01" />
+        </div>
+
+        <div class="form-group">
+          <label>Afternoon Cortisol</label>
+          <input type="number" id="cort_pm" min="0" step="0.01" />
+        </div>
+
+        <div class="form-group full-width">
           <label>Cholesterol (mg/dL)</label>
-          <input type="number" id="chol" class="w-full p-2 border rounded" min="0" step="0.1" />
+          <input type="number" id="chol" min="0" step="0.1" />
         </div>
 
-        <button class="bg-pink-600 text-white px-4 py-2 rounded" type="submit">
-          Add Record
-        </button>
+        <button type="submit" class="full-width">Add Record</button>
 
       </form>
     </div>

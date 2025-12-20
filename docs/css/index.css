@@ -126,3 +126,12 @@ tr:nth-child(even) {
   color: #777;
   font-style: italic;
 }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.full-width {
+  grid-column: span 2;
+}
