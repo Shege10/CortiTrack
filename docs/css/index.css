@@ -1,0 +1,128 @@
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #ffe7f3;
+  color: #444;
+}
+
+/* ===== App Layout ===== */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== Titles ===== */
+.app-title {
+  text-align: center;
+  color: #ec4899;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: #db2777;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(236, 72, 153, 0.18);
+}
+
+/* ===== Form ===== */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.5rem;
+}
+
+form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #f9a8d4;
+  font-size: 0.95rem;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.25);
+}
+
+/* Full-width button */
+form button {
+  grid-column: span 2;
+  margin-top: 1rem;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: #ec4899;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #db2777;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(236, 72, 153, 0.35);
+}
+
+/* ===== Table ===== */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+th {
+  background-color: #fce7f3;
+  color: #db2777;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #f9c2d8;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: #fff5fa;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+  color: #777;
+  font-style: italic;
+}
